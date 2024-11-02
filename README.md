@@ -55,22 +55,7 @@ npm start
 ```
 linear-discriminant-analysis-LDA-ML/
 │
-├── controllers/           # Route controllers
-│   └── ldaController.js  # LDA implementation logic
-│
-├── public/               # Static files
-│   ├── css/             # Stylesheets
-│   ├── js/              # Client-side JavaScript
-│   └── images/          # Images and visualizations
-│
-├── routes/              # API routes
-│   └── ldaRoutes.js    # LDA endpoints
-│
-├── views/               # View templates
-│   ├── index.ejs
-│   └── results.ejs
-│
-├── app.js              # Main application file
+├── server.js              # Main application file
 ├── package.json        # Project dependencies
 ├── package-lock.json   # Dependency lock file
 └── README.md           # Project documentation
@@ -80,10 +65,8 @@ linear-discriminant-analysis-LDA-ML/
 
 After starting the server, navigate to `http://localhost:3000` in your web browser to access the application.
 
-### Example Implementation
-
-```javascript
 // Sample code from ldaController.js
+
 const performLDA = (data, labels) => {
   // Calculate class means
   const classMeans = calculateClassMeans(data, labels);
@@ -99,7 +82,7 @@ const performLDA = (data, labels) => {
   
   return projectedData;
 };
-```
+
 
 ## API Routes
 
